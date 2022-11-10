@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.app {
+    min-height: inherit;
+    display: flex;
+    flex-direction: row;
+    background-image: radial-gradient(navy, black);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    width: 10vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-right: 4px solid rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+/* yo */
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: 50%;
+    left: 4.25%;
+    transform: translate(0, -50%);
+    min-height: 14vw;
+    width: fit-content;
+    background-color: grey;
+}
+.nav-links {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid transparent;
+    padding: 1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.nav-links:first-child {
+    top: 0rem;
+}
+.nav-links:last-child {
+    bottom: 0rem;
+}
+.nav-links:hover {
+    border: 3px solid dodgerblue;
+}
+nav ul li {
+    margin: auto;
+    position: relative;
+}
+.nav-icons {
+    height: 4rem;
+}

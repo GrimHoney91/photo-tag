@@ -1,0 +1,115 @@
+.home-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    min-height: inherit;
+    width: 100%;
+    display: grid;
+    position: relative;
+}
+.slider-container {
+    margin: auto;
+    height: 80vh;
+    width: 35vw;
+    position: relative;
+    overflow: hidden;
+}
+.slider-btn {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5rem;
+    position: absolute;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 0.25s ease-in-out;
+}
+.slider-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+.slider-btn:disabled {
+    background-color: red;
+}
+.slider-btn:first-child {
+    top: 50%;
+    left: 25%;
+    transform: translate(0%, -50%);
+}
+.slider-btn:last-child {
+    top: 50%;
+    right: 25%;
+    transform: translate(0, -50%);
+}
+.symbols {
+    height: fit-content;
+    width: fit-content;
+    font-size: 4rem;
+}
+.left-symbol {
+    padding-right: 2.5rem;
+}
+.right-symbol {
+    padding-left: 2.5rem;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transition: all 0.75s ease-in-out;
+}
+.display-container {
+    height: 80vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+.display-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.display-description h1 {
+    font-size: 6rem;
+    color: white;
+}
+.display-description span {
+    font-size: 3rem;
+    color: gainsboro;
+}
+.display-image {
+    height: 60vh;
+    width: 70%;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 7px solid dodgerblue;
+    border-radius: 1rem;
+}
+.play-btn {
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem 0rem;
+    background-color: white;
+    font-size: 2.5rem;
+    transition: all 0.25s ease-in-out;
+}
+.play-btn:hover {
+   background-color: lightgray;
+}
+#level1 {
+    background-image: url('../images/first.jpg');
+}
+#level2 {
+    background-image: url('../images/second.jpg');
+}
+#level3 {
+    background-image: url('../images/third.jpg');
+}
